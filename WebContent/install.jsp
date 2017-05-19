@@ -50,343 +50,7 @@
                     </div><div class="menu-toggler sidebar-toggler">
                         <a href="javascript:;" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></a>
                     </div>
-
-                    <div class="search-bar">
-                        <form class="sidebar-search  " action="page_general_search_3.html" method="POST">
-
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search...">
-
-                            </div>
-                        </form>
-                    </div>
                     <!-- END LOGO -->
-
-                    <!-- BEGIN TOP NAVIGATION MENU -->
-                    <div class="top-menu">
-                        <ul class="nav navbar-nav pull-right">
-                            <!-- BEGIN NOTIFICATION DROPDOWN -->
-                            <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
-                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                    <i class="icon-bell"></i>
-                                    <span class="badge badge-default"> <span class="ring">
-                                        </span><span class="ring-point">
-                                        </span> </span>
-                                </a>
-                                <ul class="dropdown-menu animated flipInX">
-                                    <li class="external">
-                                        <h3>
-                                            <span class="bold">12 pending</span> notifications</h3>
-                                        <a href="page_user_profile_1.html">view all</a>
-                                    </li>
-                                    <li>  <ul class="dropdown-menu-list scroller" data-handle-color="#637283">
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">just now</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-success">
-                                                            <i class="fa fa-plus"></i>
-                                                        </span> New user registered. </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">3 mins</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-danger">
-                                                            <i class="fa fa-bolt"></i>
-                                                        </span> Server #12 overloaded. </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">10 mins</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-warning">
-                                                            <i class="fa fa-bell-o"></i>
-                                                        </span> Server #2 not responding. </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">14 hrs</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-info">
-                                                            <i class="fa fa-bullhorn"></i>
-                                                        </span> Application error. </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">2 days</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-danger">
-                                                            <i class="fa fa-bolt"></i>
-                                                        </span> Database overloaded 68%. </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">3 days</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-danger">
-                                                            <i class="fa fa-bolt"></i>
-                                                        </span> A user IP blocked. </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">4 days</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-warning">
-                                                            <i class="fa fa-bell-o"></i>
-                                                        </span> Storage Server #4 not responding dfdfdfd. </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">5 days</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-info">
-                                                            <i class="fa fa-bullhorn"></i>
-                                                        </span> System Error. </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">9 days</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-danger">
-                                                            <i class="fa fa-bolt"></i>
-                                                        </span> Storage server failed. </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- END NOTIFICATION DROPDOWN -->
-                            <!-- BEGIN INBOX DROPDOWN -->
-                            <li class="dropdown dropdown-extended dropdown-notification" id="header_inbox_bar">
-                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                    <i class="icon-envelope-open"></i>
-                                    <span class="badge badge-default"> <span class="ring">
-                                        </span><span class="ring-point">
-                                        </span> </span>
-                                </a>
-                                <ul class="dropdown-menu animated flipInX">
-                                    <li class="external">
-                                        <h3>
-                                            <span class="bold">12 New Email</span> </h3>
-                                        <a href="page_user_profile_1.html">view all</a>
-                                    </li>
-                                    <li>
-                                        <ul class="dropdown-menu-list scroller"  data-handle-color="#637283">
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">just now</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-success">
-                                                            <i class="fa fa-plus"></i>
-                                                        </span> 12 New Inbox. </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">3 mins</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-danger">
-                                                            <i class="fa fa-bolt"></i>
-                                                        </span> 10 Spam. </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">10 mins</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-warning">
-                                                            <i class="fa fa-bell-o"></i>
-                                                        </span> 2 Trash. </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="time">14 hrs</span>
-                                                    <span class="details">
-                                                        <span class="label label-sm label-icon label-info">
-                                                            <i class="fa fa-bullhorn"></i>
-                                                        </span> 5 Social. </span>
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- END INBOX DROPDOWN -->
-                            <!-- BEGIN TODO DROPDOWN -->
-                            <li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
-                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                    <i class="icon-calendar"></i>
-                                    <span class="badge badge-default"> <span class="ring">
-                                        </span><span class="ring-point">
-                                        </span> </span>
-                                </a>
-                                <ul class="dropdown-menu extended tasks animated flipInX">
-                                    <li class="external">
-                                        <h3>You have
-                                            <span class="bold">12 pending</span> tasks</h3>
-                                        <a href="app_todo.html">view all</a>
-                                    </li>
-                                    <li>
-
-                                        <ul class="dropdown-menu-list scroller" data-handle-color="#637283" data-initialized="1">
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="task">
-                                                        <span class="desc">New release v1.2 </span>
-                                                        <span class="percent">30%</span>
-                                                    </span>
-                                                    <span class="progress">
-                                                        <span style="width: 40%;" class="progress-bar progress-bar-success" >
-                                                            <span class="sr-only">40% Complete</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="task">
-                                                        <span class="desc">Application deployment</span>
-                                                        <span class="percent">65%</span>
-                                                    </span>
-                                                    <span class="progress">
-                                                        <span style="width: 65%;" class="progress-bar progress-bar-danger">
-                                                            <span class="sr-only">65% Complete</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="task">
-                                                        <span class="desc">Mobile app release</span>
-                                                        <span class="percent">98%</span>
-                                                    </span>
-                                                    <span class="progress">
-                                                        <span style="width: 98%;" class="progress-bar progress-bar-success" >
-                                                            <span class="sr-only">98% Complete</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="task">
-                                                        <span class="desc">Database migration</span>
-                                                        <span class="percent">10%</span>
-                                                    </span>
-                                                    <span class="progress">
-                                                        <span style="width: 10%;" class="progress-bar progress-bar-warning">
-                                                            <span class="sr-only">10% Complete</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="task">
-                                                        <span class="desc">Web server upgrade</span>
-                                                        <span class="percent">58%</span>
-                                                    </span>
-                                                    <span class="progress">
-                                                        <span style="width: 58%;" class="progress-bar progress-bar-info" >
-                                                            <span class="sr-only">58% Complete</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="task">
-                                                        <span class="desc">Mobile development</span>
-                                                        <span class="percent">85%</span>
-                                                    </span>
-                                                    <span class="progress">
-                                                        <span style="width: 85%;" class="progress-bar progress-bar-success" >
-                                                            <span class="sr-only">85% Complete</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <span class="task">
-                                                        <span class="desc">New UI release</span>
-                                                        <span class="percent">38%</span>
-                                                    </span>
-                                                    <span class="progress progress-striped">
-                                                        <span style="width: 38%;" class="progress-bar progress-bar-important" >
-                                                            <span class="sr-only">38% Complete</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- END TODO DROPDOWN -->
-                            <!-- BEGIN USER LOGIN DROPDOWN -->
-                            <li class="dropdown dropdown-user">
-                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
-                                    <img alt="" class="img-circle" src="assets/images/avtar-1.jpg">
-
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-default">
-                                    <li>
-                                        <a href="page_user_profile_1.html">
-                                            <i class="icon-user"></i> My Profile </a>
-                                    </li>
-                                    <li>
-                                        <a href="app_calendar.html">
-                                            <i class="icon-calendar"></i> My Calendar </a>
-                                    </li>
-                                    <li>
-                                        <a href="app_inbox.html">
-                                            <i class="icon-envelope-open"></i> My Inbox
-                                            <span class="badge badge-danger"> 3 </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="app_todo.html">
-                                            <i class="icon-rocket"></i> My Tasks
-                                            <span class="badge badge-success"> 7 </span>
-                                        </a>
-                                    </li>
-                                    <li class="divider"> </li>
-                                    <li>
-                                        <a href="page_user_lock_1.html">
-                                            <i class="icon-lock"></i> Lock Screen </a>
-                                    </li>
-                                    <li>
-                                        <a href="page_user_login_1.html">
-                                            <i class="icon-key"></i> Log Out </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- END USER LOGIN DROPDOWN -->
-                            <!-- BEGIN QUICK SIDEBAR TOGGLER -->
-                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-                            <li class="dropdown dropdown-quick-sidebar-toggler">
-                                <a href="javascript:;" class="dropdown-toggle">
-                                    <i class="icon-logout"></i>
-                                </a>
-                            </li>
-                            <!-- END QUICK SIDEBAR TOGGLER -->
-                        </ul>
-                    </div>
-                    <!-- END TOP NAVIGATION MENU -->
                 </div>
                 <!-- END HEADER INNER -->
             </div>
@@ -404,157 +68,9 @@
                             <li>
                                 <a href="#"><i class="icon-grid"></i> <span class="nav-label">Dashboard</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="index.html">Dashboard 1</a></li>
-                                    <li><a href="index-2.html">Dashboard 2</a></li>
-                                    <li><a href="index-3.html">Dashboard 3</a></li>
+                                    <li><a href="index.html">Instalação</a></li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="#"><i class="icon-basket"></i> <span class="nav-label">Ecommerce</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">                               
-                                    <li><a href="products.html">Product List </a></li>
-                                    <li><a href="orders.html">Orders </a></li>
-                                    <li><a href="order-detail.html">Order Detail </a></li>
-                                    <li><a href="order-invoice.html">Order Invoice </a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="widgets.html"><i class="fa fa-cog"></i> <span class="nav-label">Widgets </span><span class="label label-rouded pull-right p3-bg note-icon">New 40+</span></a>
-
-                            </li>
-                            <li>
-                                <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="mailbox.html">Inbox</a></li>
-                                    <li><a href="mail_detail.html">Email view</a></li>
-                                    <li><a href="mail_compose.html">Compose email</a></li>
-                                </ul>
-                            </li><li class="nav-heading"><span>Components</span></li>
-                            <li>
-                                <a href="#"><i class="fa fa-bar-chart"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span><span class="label label-rouded pull-right p3-bg note-icon">6</span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="flot_charts.html">Flot charts</a></li>
-                                    <li><a href="morris_js.html">Morris.js</a></li>
-                                    <li><a href="chart_js.html">Chart.js</a></li>
-                                    <li><a href="c3.html">C3</a></li>
-
-
-                                </ul>
-                            </li>
-
-                            <li class="active">
-                                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span><span class="label label-rouded pull-right p1-bg note-icon">11</span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="form_basic.html">Basic form</a></li>
-                                    <li><a href="form_advanced.html">Advanced form</a></li>
-                                    <li><a href="form_wizard.html">Wizard form</a></li>
-                                    <li><a href="form_masked.html">Masked form</a></li>
-                                    <li><a href="form_file_upload.html">File upload</a></li>
-                                    <li><a href="file_drop.html">File Dropzone</a></li>
-                                    <li><a href="form_text_editor.html">Text editor</a></li>
-                                    <li><a href="form_inline_edit.html">Inline edit</a></li>
-                                    <li><a href="form_validate.html">Form Validation</a></li>
-                                    <li><a href="form_tinymce.html">Tinymce Editor</a></li>
-                                    <li><a href="form_wysihtml5.html">WYSIHTML5 Editor</a></li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span><span class="label label-rouded pull-right p4-bg note-icon">8</span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="lockscreen.html">Lockscreen</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="empty_page.html">Empty page</a></li>
-                                    <li><a href="gallery.html">gallery</a></li>
-                                    <li><a href="price_tables.html">Price tables</a></li>
-                                    <li><a href="page_contact.html">Contact Page</a></li>
-                                </ul>
-                            </li>                     
-
-                            <li>
-                                <a href="#"><i class="fa fa-hourglass-o"></i> <span class="nav-label">Icons</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="icons.html">Icons</a></li>
-                                    <li><a href="weather-icon.html">Weather Icons</a></li>
-                                    <li><a href="themifyicons.html">Themify Icons</a></li>
-                                    <li><a href="linea_arrows.html">Linea Arrows Icons</a></li>
-                                    <li><a href="linea_basic.html">Linea Basic Icons</a></li>                              
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span><span class="label label-rouded pull-right p2-bg note-icon">16</span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="typography.html">Typography</a></li>
-                                    <li><a href="buttons.html">Buttons</a></li>
-                                    <li><a href="video.html">Video</a></li>
-                                    <li><a href="tabs_panels.html">Panels</a></li>
-                                    <li><a href="tabs.html">Tabs</a></li><li><a href="chat.html">Chat</a></li>
-                                    <li><a href="alert_notifications.html">Alert &amp; notifications</a></li>
-                                    <li><a href="tree_view.html">Tree View</a></li>
-                                    <li><a href="timeline.html">Time Line</a></li>
-                                    <li><a href="progress_bar.html">Progress Bar</a></li>
-                                    <li><a href="sliders.html">OWL Carousel</a></li>
-                                    <li><a href="range_slider.html">Range Slider</a></li>
-                                    <li><a href="alert_popup.html">Alert Popup</a></li>
-                                    <li><a href="accordion.html">Accordion</a></li>
-                                    <li><a href="models.html">Modals Popup</a></li>
-                                    <li><a href="toastr_alert.html">Toastr Alert</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span><span class="label label-rouded pull-right p4-bg note-icon">5</span></a>
-                                <ul class="nav nav-second-level collapse"><li><a href="table_basic.html">Static Tables</a></li>
-                                    <li><a href="table_data_tables.html">Data Tables</a></li>
-                                    <li><a href="table_responsive.html">Responsive Tables</a></li>
-                                    <li><a href="table_editable.html">Editable Tables</a></li>
-                                    <li><a href="table_jsgrid.html">JSGrid Tables</a></li>
-
-                                </ul>
-                            </li><li class="nav-heading"><span>More</span></li>
-                            <li>
-                                <a href="#"><i class="fa fa-users"></i> <span class="nav-label">Users</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="user_profile.html">profile</a></li>
-                                    <li><a href="user_list.html">User list</a></li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-map-marker"></i> <span class="nav-label">maps</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="google_maps.html">Google maps</a></li>
-                                    <li><a href="vector_maps.html">Vector Maps</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-pencil"></i> <span class="nav-label">Blog</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="blog_list.html">Blog list</a></li>
-                                    <li><a href="blog_post.html">Blog post</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="calendar.html"><i class="fa fa-calendar"></i>  <span class="nav-label">Calendar </span></a></li>
-
-                            <li>
-                                <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li>
-                                        <a href="#">Third Level <span class="fa arrow"></span></a>
-                                        <ul class="nav nav-third-level collapse">
-                                            <li>
-                                                <a href="#">Third Level Item</a>
-                                            </li>
-                                        </ul>
-                                    </li> <li><a href="#">Second Level Item</a></li>
-                                </ul>
-                            </li><li class="nav-heading"><span>Extra</span></li>
-
                         </ul>
                         <!-- END SIDEBAR MENU -->
                         <!-- END SIDEBAR MENU -->
@@ -570,12 +86,11 @@
                                 <div class="page-title">
                                     <div class="row">
 
-                                        <h4 class="pull-left">Picolhooo</h4>
-
+                                        <h4 class="pull-left">Instalação do Stand</h4>
 
                                         <ol class="breadcrumb pull-right">
                                             <li><a href="javascript: void(0);"><i class="fa fa-home"></i></a></li>
-                                            <li>Form Wizard</li>
+                                            <li>Instalação</li>
                                         </ol>
 
                                     </div>
@@ -584,23 +99,11 @@
                         </div><!-- end .page title-->
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="panel panel-card margin-b-30">
                                     <!-- Start .panel -->
                                     <div class="panel-heading">
-                                       Form Wizard
-                                        <div class="pull-right">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-info btn-rounded btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
-                                                <ul class="dropdown-menu panel-dropdown" role="menu">
-                                                    <li><a href="#">Action</a></li>
-                                                    <li><a href="#">Another action</a></li>
-                                                    <li><a href="#">Something else here</a></li>
-                                                    <li class="divider"></li>
-                                                    <li><a href="#">Separated link</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                       Insira os detalhes
                                     </div>
                                     <div class="panel-body">
                                          <div id="wizard" class="bwizard">
@@ -609,19 +112,19 @@
                                             <li class="active">
                                                 <a href="#tab1" data-toggle="tab">
                                                     <span class="step-number">1</span>
-                                                    <span class="step-text">Personal Info</span>
+                                                    <span class="step-text">Responsavel</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#tab2" data-toggle="tab">
                                                     <span class="step-number">2</span>
-                                                    <span class="step-text">Contact Info</span>
+                                                    <span class="step-text">Login</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#tab3" data-toggle="tab">
                                                     <span class="step-number">3</span>
-                                                    <span class="step-text">Account Info</span>
+                                                    <span class="step-text">Stand</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -629,174 +132,365 @@
                                             <div class="tab-content">
                                                 <div class="tab-pane active" id="tab1">
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label">First Name</label>
-                                                        <div class="col-md-9">
-                                                            <input class="form-control" name="firstname" type="text">
+                                                        <label class="col-md-1 control-label">Nome</label>
+                                                        <div class="col-md-11">
+                                                            <input class="form-control" name="u_nome" type="text">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Last Name</label>
-                                                        <div class="col-md-9">
-                                                            <input class="form-control" name="lastname" type="text">
+                                                        <label class=" col-md-1 control-label">Sobrenome</label>
+                                                        <div class="col-md-11">
+                                                            <input class="form-control" name="u_snome" type="text">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
+                                                    <div class="form-group">
+                                                        <label class=" col-md-1 control-label">Nacionalidade</label>
+                                                        <div class="col-md-11">
+                                                            <select name="u_nacionalidade" class="form-control select2">
+																<option value="AF">Afghanistan</option>
+																<option value="AX">Åland Islands</option>
+																<option value="AL">Albania</option>
+																<option value="DZ">Algeria</option>
+																<option value="AS">American Samoa</option>
+																<option value="AD">Andorra</option>
+																<option value="AO">Angola</option>
+																<option value="AI">Anguilla</option>
+																<option value="AQ">Antarctica</option>
+																<option value="AG">Antigua and Barbuda</option>
+																<option value="AR">Argentina</option>
+																<option value="AM">Armenia</option>
+																<option value="AW">Aruba</option>
+																<option value="AU">Australia</option>
+																<option value="AT">Austria</option>
+																<option value="AZ">Azerbaijan</option>
+																<option value="BS">Bahamas</option>
+																<option value="BH">Bahrain</option>
+																<option value="BD">Bangladesh</option>
+																<option value="BB">Barbados</option>
+																<option value="BY">Belarus</option>
+																<option value="BE">Belgium</option>
+																<option value="BZ">Belize</option>
+																<option value="BJ">Benin</option>
+																<option value="BM">Bermuda</option>
+																<option value="BT">Bhutan</option>
+																<option value="BO">Bolivia, Plurinational State of</option>
+																<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+																<option value="BA">Bosnia and Herzegovina</option>
+																<option value="BW">Botswana</option>
+																<option value="BV">Bouvet Island</option>
+																<option value="BR">Brazil</option>
+																<option value="IO">British Indian Ocean Territory</option>
+																<option value="BN">Brunei Darussalam</option>
+																<option value="BG">Bulgaria</option>
+																<option value="BF">Burkina Faso</option>
+																<option value="BI">Burundi</option>
+																<option value="KH">Cambodia</option>
+																<option value="CM">Cameroon</option>
+																<option value="CA">Canada</option>
+																<option value="CV">Cape Verde</option>
+																<option value="KY">Cayman Islands</option>
+																<option value="CF">Central African Republic</option>
+																<option value="TD">Chad</option>
+																<option value="CL">Chile</option>
+																<option value="CN">China</option>
+																<option value="CX">Christmas Island</option>
+																<option value="CC">Cocos (Keeling) Islands</option>
+																<option value="CO">Colombia</option>
+																<option value="KM">Comoros</option>
+																<option value="CG">Congo</option>
+																<option value="CD">Congo, the Democratic Republic of the</option>
+																<option value="CK">Cook Islands</option>
+																<option value="CR">Costa Rica</option>
+																<option value="CI">Côte d'Ivoire</option>
+																<option value="HR">Croatia</option>
+																<option value="CU">Cuba</option>
+																<option value="CW">Curaçao</option>
+																<option value="CY">Cyprus</option>
+																<option value="CZ">Czech Republic</option>
+																<option value="DK">Denmark</option>
+																<option value="DJ">Djibouti</option>
+																<option value="DM">Dominica</option>
+																<option value="DO">Dominican Republic</option>
+																<option value="EC">Ecuador</option>
+																<option value="EG">Egypt</option>
+																<option value="SV">El Salvador</option>
+																<option value="GQ">Equatorial Guinea</option>
+																<option value="ER">Eritrea</option>
+																<option value="EE">Estonia</option>
+																<option value="ET">Ethiopia</option>
+																<option value="FK">Falkland Islands (Malvinas)</option>
+																<option value="FO">Faroe Islands</option>
+																<option value="FJ">Fiji</option>
+																<option value="FI">Finland</option>
+																<option value="FR">France</option>
+																<option value="GF">French Guiana</option>
+																<option value="PF">French Polynesia</option>
+																<option value="TF">French Southern Territories</option>
+																<option value="GA">Gabon</option>
+																<option value="GM">Gambia</option>
+																<option value="GE">Georgia</option>
+																<option value="DE">Germany</option>
+																<option value="GH">Ghana</option>
+																<option value="GI">Gibraltar</option>
+																<option value="GR">Greece</option>
+																<option value="GL">Greenland</option>
+																<option value="GD">Grenada</option>
+																<option value="GP">Guadeloupe</option>
+																<option value="GU">Guam</option>
+																<option value="GT">Guatemala</option>
+																<option value="GG">Guernsey</option>
+																<option value="GN">Guinea</option>
+																<option value="GW">Guinea-Bissau</option>
+																<option value="GY">Guyana</option>
+																<option value="HT">Haiti</option>
+																<option value="HM">Heard Island and McDonald Islands</option>
+																<option value="VA">Holy See (Vatican City State)</option>
+																<option value="HN">Honduras</option>
+																<option value="HK">Hong Kong</option>
+																<option value="HU">Hungary</option>
+																<option value="IS">Iceland</option>
+																<option value="IN">India</option>
+																<option value="ID">Indonesia</option>
+																<option value="IR">Iran, Islamic Republic of</option>
+																<option value="IQ">Iraq</option>
+																<option value="IE">Ireland</option>
+																<option value="IM">Isle of Man</option>
+																<option value="IL">Israel</option>
+																<option value="IT">Italy</option>
+																<option value="JM">Jamaica</option>
+																<option value="JP">Japan</option>
+																<option value="JE">Jersey</option>
+																<option value="JO">Jordan</option>
+																<option value="KZ">Kazakhstan</option>
+																<option value="KE">Kenya</option>
+																<option value="KI">Kiribati</option>
+																<option value="KP">Korea, Democratic People's Republic of</option>
+																<option value="KR">Korea, Republic of</option>
+																<option value="KW">Kuwait</option>
+																<option value="KG">Kyrgyzstan</option>
+																<option value="LA">Lao People's Democratic Republic</option>
+																<option value="LV">Latvia</option>
+																<option value="LB">Lebanon</option>
+																<option value="LS">Lesotho</option>
+																<option value="LR">Liberia</option>
+																<option value="LY">Libya</option>
+																<option value="LI">Liechtenstein</option>
+																<option value="LT">Lithuania</option>
+																<option value="LU">Luxembourg</option>
+																<option value="MO">Macao</option>
+																<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+																<option value="MG">Madagascar</option>
+																<option value="MW">Malawi</option>
+																<option value="MY">Malaysia</option>
+																<option value="MV">Maldives</option>
+																<option value="ML">Mali</option>
+																<option value="MT">Malta</option>
+																<option value="MH">Marshall Islands</option>
+																<option value="MQ">Martinique</option>
+																<option value="MR">Mauritania</option>
+																<option value="MU">Mauritius</option>
+																<option value="YT">Mayotte</option>
+																<option value="MX">Mexico</option>
+																<option value="FM">Micronesia, Federated States of</option>
+																<option value="MD">Moldova, Republic of</option>
+																<option value="MC">Monaco</option>
+																<option value="MN">Mongolia</option>
+																<option value="ME">Montenegro</option>
+																<option value="MS">Montserrat</option>
+																<option value="MA">Morocco</option>
+																<option value="MZ">Mozambique</option>
+																<option value="MM">Myanmar</option>
+																<option value="NA">Namibia</option>
+																<option value="NR">Nauru</option>
+																<option value="NP">Nepal</option>
+																<option value="NL">Netherlands</option>
+																<option value="NC">New Caledonia</option>
+																<option value="NZ">New Zealand</option>
+																<option value="NI">Nicaragua</option>
+																<option value="NE">Niger</option>
+																<option value="NG">Nigeria</option>
+																<option value="NU">Niue</option>
+																<option value="NF">Norfolk Island</option>
+																<option value="MP">Northern Mariana Islands</option>
+																<option value="NO">Norway</option>
+																<option value="OM">Oman</option>
+																<option value="PK">Pakistan</option>
+																<option value="PW">Palau</option>
+																<option value="PS">Palestinian Territory, Occupied</option>
+																<option value="PA">Panama</option>
+																<option value="PG">Papua New Guinea</option>
+																<option value="PY">Paraguay</option>
+																<option value="PE">Peru</option>
+																<option value="PH">Philippines</option>
+																<option value="PN">Pitcairn</option>
+																<option value="PL">Poland</option>
+																<option value="PT">Portugal</option>
+																<option value="PR">Puerto Rico</option>
+																<option value="QA">Qatar</option>
+																<option value="RE">Réunion</option>
+																<option value="RO">Romania</option>
+																<option value="RU">Russian Federation</option>
+																<option value="RW">Rwanda</option>
+																<option value="BL">Saint Barthélemy</option>
+																<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+																<option value="KN">Saint Kitts and Nevis</option>
+																<option value="LC">Saint Lucia</option>
+																<option value="MF">Saint Martin (French part)</option>
+																<option value="PM">Saint Pierre and Miquelon</option>
+																<option value="VC">Saint Vincent and the Grenadines</option>
+																<option value="WS">Samoa</option>
+																<option value="SM">San Marino</option>
+																<option value="ST">Sao Tome and Principe</option>
+																<option value="SA">Saudi Arabia</option>
+																<option value="SN">Senegal</option>
+																<option value="RS">Serbia</option>
+																<option value="SC">Seychelles</option>
+																<option value="SL">Sierra Leone</option>
+																<option value="SG">Singapore</option>
+																<option value="SX">Sint Maarten (Dutch part)</option>
+																<option value="SK">Slovakia</option>
+																<option value="SI">Slovenia</option>
+																<option value="SB">Solomon Islands</option>
+																<option value="SO">Somalia</option>
+																<option value="ZA">South Africa</option>
+																<option value="GS">South Georgia and the South Sandwich Islands</option>
+																<option value="SS">South Sudan</option>
+																<option value="ES">Spain</option>
+																<option value="LK">Sri Lanka</option>
+																<option value="SD">Sudan</option>
+																<option value="SR">Suriname</option>
+																<option value="SJ">Svalbard and Jan Mayen</option>
+																<option value="SZ">Swaziland</option>
+																<option value="SE">Sweden</option>
+																<option value="CH">Switzerland</option>
+																<option value="SY">Syrian Arab Republic</option>
+																<option value="TW">Taiwan, Province of China</option>
+																<option value="TJ">Tajikistan</option>
+																<option value="TZ">Tanzania, United Republic of</option>
+																<option value="TH">Thailand</option>
+																<option value="TL">Timor-Leste</option>
+																<option value="TG">Togo</option>
+																<option value="TK">Tokelau</option>
+																<option value="TO">Tonga</option>
+																<option value="TT">Trinidad and Tobago</option>
+																<option value="TN">Tunisia</option>
+																<option value="TR">Turkey</option>
+																<option value="TM">Turkmenistan</option>
+																<option value="TC">Turks and Caicos Islands</option>
+																<option value="TV">Tuvalu</option>
+																<option value="UG">Uganda</option>
+																<option value="UA">Ukraine</option>
+																<option value="AE">United Arab Emirates</option>
+																<option value="GB">United Kingdom</option>
+																<option value="US">United States</option>
+																<option value="UM">United States Minor Outlying Islands</option>
+																<option value="UY">Uruguay</option>
+																<option value="UZ">Uzbekistan</option>
+																<option value="VU">Vanuatu</option>
+																<option value="VE">Venezuela, Bolivarian Republic of</option>
+																<option value="VN">Viet Nam</option>
+																<option value="VG">Virgin Islands, British</option>
+																<option value="VI">Virgin Islands, U.S.</option>
+																<option value="WF">Wallis and Futuna</option>
+																<option value="EH">Western Sahara</option>
+																<option value="YE">Yemen</option>
+																<option value="ZM">Zambia</option>
+																<option value="ZW">Zimbabwe</option>
+		                                                    </select>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End .control-group  -->
+                                                    
+                                                    <div class="form-group">
+                                                        <label class=" col-md-1 control-label">Morada</label>
+                                                        <div class="col-md-11">
+                                                            <input class="form-control" name="u_morada" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <!-- End .control-group  -->
+                                                    
+                                                    <div class="form-group">
+                                                        <label class=" col-md-1 control-label">Localidade</label>
+                                                        <div class="col-md-11">
+                                                            <input class="form-control" name="u_localidade" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <!-- End .control-group  -->
+                                                    
+                                                    <div class="form-group">
+                                                        <label class=" col-md-1 control-label">Codigo Postal</label>
+                                                        <div class="col-md-11">
+                                                            <input class="form-control" name="u_cp" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <!-- End .control-group  -->
+                                                  
+                                                  	<div class="form-group">
+                                                        <label class=" col-md-1 control-label">Contacto</label>
+                                                        <div class="col-md-11">
+                                                            <input class="form-control" name="u_contacto" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <!-- End .control-group  -->  
                                                 </div>
                                                 <div class="tab-pane" id="tab2">
                                                     <div class="form-group">
                                                         <label class=" col-md-3 control-label">Email</label>
                                                         <div class="col-md-9">
-                                                            <input class="form-control" name="email" type="email">
+                                                            <input class="form-control" name="u_email" type="email">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
-                                                    <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Phone number</label>
-                                                        <div class=" col-md-9">
-                                                            <input class="form-control" name="phone" type="text">
-                                                        </div>
-                                                    </div>
-                                                    <!-- End .control-group  -->
-                                                </div>
-                                                <div class="tab-pane" id="tab3">
                                                     <div class="form-group">
                                                         <label class=" col-md-3 control-label">Username</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="username" type="text">
+                                                            <input class="form-control" name="u_username" type="text">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
                                                         <label class=" col-md-3 control-label">Password</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="password" type="password">
+                                                            <input class="form-control" name="u_password" type="password">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Re-type password</label>
+                                                        <label class=" col-md-3 control-label">Novamente a mesma password</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="password_2" type="password">
+                                                            <input class="form-control" name="u_password_2" type="password">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                 </div>
-                                            </div>
-                                        </form>
-                                        <ul class="pager">
-                                            <li class="previous"><a href="#">&larr; Back</a>
-                                            </li>
-                                            <li class="next"><a href="#">Next &rarr;</a>
-                                            </li>
-                                            <li class="next finish" style="display:none;"><a href="#">Finish</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!-- End .bwizard -->
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="panel panel-card margin-b-30">
-                                    <!-- Start .panel -->
-                                    <div class="panel-heading">
-                                       Form wizard with progressbar
-                                        <div class="pull-right">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-info btn-rounded btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
-                                                <ul class="dropdown-menu panel-dropdown" role="menu">
-                                                    <li><a href="#">Action</a></li>
-                                                    <li><a href="#">Another action</a></li>
-                                                    <li><a href="#">Something else here</a></li>
-                                                    <li class="divider"></li>
-                                                    <li><a href="#">Separated link</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel-body">
-                                         <div id="wizard1" class="bwizard">
-                                        <!-- Start .bwizard -->
-                                        <ul class="bwizard-steps list-inline">
-                                            <li class="active">
-                                                <a href="#tab4" data-toggle="tab">
-                                                    <span class="step-number">1</span>
-                                                    <span class="step-text">Personal Info</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#tab5" data-toggle="tab">
-                                                    <span class="step-number">2</span>
-                                                    <span class="step-text">Contact Info</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#tab6" data-toggle="tab">
-                                                    <span class="step-number">3</span>
-                                                    <span class="step-text">Account Info</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="wizard-progress">
-                                            <div id="bar" class="progress">
-                                                <div class="progress-bar"></div>
-                                            </div>
-                                        </div>
-                                        <form class="form-horizontal" >
-                                            <div class="tab-content">
-                                                <div class="tab-pane active" id="tab4">
+                                                <div class="tab-pane" id="tab3">
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label">First Name</label>
+                                                        <label class=" col-md-3 control-label">Nome</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="firstname" type="text">
+                                                            <input class="form-control" name="w_nome" type="text">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label">Last Name</label>
+                                                        <label class=" col-md-3 control-label">Morada</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="lastname" type="text">
-                                                        </div>
-                                                    </div>
-                                                    <!-- End .control-group  -->
-                                                </div>
-                                                <div class="tab-pane" id="tab5">
-                                                    <div class="form-group">
-                                                        <label class="col-md-3 control-label">Email</label>
-                                                        <div class=" col-md-9">
-                                                            <input class="form-control" name="email" type="email">
+                                                            <input class="form-control" name="w_morada" type="text">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label">Phone number</label>
+                                                        <label class=" col-md-3 control-label">Localidade</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="phone" type="text">
-                                                        </div>
-                                                    </div>
-                                                    <!-- End .control-group  -->
-                                                </div>
-                                                <div class="tab-pane" id="tab6">
-                                                    <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Username</label>
-                                                        <div class=" col-md-9">
-                                                            <input class="form-control" name="username" type="text">
+                                                            <input class="form-control" name="w_localidade" type="text">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label">Password</label>
+                                                        <label class=" col-md-3 control-label">Codigo Postal</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="password" type="password">
-                                                        </div>
-                                                    </div>
-                                                    <!-- End .control-group  -->
-                                                    <div class="form-group">
-                                                        <label class="col-md-3 control-label">Re-type password</label>
-                                                        <div class="col-md-9">
-                                                            <input class="form-control" name="password_2" type="password">
+                                                            <input class="form-control" name="w_localidade" type="text">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
@@ -818,9 +512,6 @@
                                 </div>
                             </div>
                         </div>
-                        
-
-
                     </div> 
                     <div class="clearfix"></div>
                     <div class="footer">
@@ -865,7 +556,7 @@
         <script src="assets/plugins/ui/jquery-ui.js"></script>
         <script src="assets/plugins/jquery/jquery.validate.js"></script>
 
-  <script src="assets/plugins/bootstrap/js/jquery.bootstrap.wizard.js"></script>
+  		<script src="assets/plugins/bootstrap/js/jquery.bootstrap.wizard.js"></script>
 
         <!-- Custom FILES -->
         <script type="text/javascript" src="assets/js/custom.js"></script>

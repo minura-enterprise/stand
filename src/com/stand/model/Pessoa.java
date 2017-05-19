@@ -2,23 +2,34 @@ package com.stand.model;
 
 
 public class Pessoa {
-	
-	int id;
-	String nome, email, contacto, contactoAlt;
-	
-	public Pessoa(int id, String nome, String email, String contacto, String contactoAlt) {
+	private int 	ID;
+	private String 	nome,
+					sobrenome,
+					nacionalidade,
+					morada,
+					localidade,
+					codigoPostal,
+					contacto,
+					email;
+	public Pessoa(int iD, String nome, String sobrenome, String nacionalidade, String morada, String localidade,
+			String codigoPostal, String contacto, String email) {
 		super();
-		this.id = id;
+		ID = iD;
 		this.nome = nome;
-		this.email = email;
+		this.sobrenome = sobrenome;
+		this.nacionalidade = nacionalidade;
+		this.morada = morada;
+		this.localidade = localidade;
+		this.codigoPostal = codigoPostal;
 		this.contacto = contacto;
-		this.contactoAlt = contactoAlt;
+		this.email = email;
 	}
-	public int getId() {
-		return id;
+	
+	public int getID() {
+		return ID;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setID(int iD) {
+		ID = iD;
 	}
 	public String getNome() {
 		return nome;
@@ -26,11 +37,35 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getEmail() {
-		return email;
+	public String getSobrenome() {
+		return sobrenome;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+	public String getNacionalidade() {
+		return nacionalidade;
+	}
+	public void setNacionalidade(String nacionalidade) {
+		this.nacionalidade = nacionalidade;
+	}
+	public String getMorada() {
+		return morada;
+	}
+	public void setMorada(String morada) {
+		this.morada = morada;
+	}
+	public String getLocalidade() {
+		return localidade;
+	}
+	public void setLocalidade(String localidade) {
+		this.localidade = localidade;
+	}
+	public String getCodigoPostal() {
+		return codigoPostal;
+	}
+	public void setCodigoPostal(String codigoPostal) {
+		this.codigoPostal = codigoPostal;
 	}
 	public String getContacto() {
 		return contacto;
@@ -38,11 +73,10 @@ public class Pessoa {
 	public void setContacto(String contacto) {
 		this.contacto = contacto;
 	}
-	public String getContactoAlt() {
-		return contactoAlt;
+	public String getEmail() {
+		return email;
 	}
-	public void setContactoAlt(String contactoAlt) {
-		this.contactoAlt = contactoAlt;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-
 }

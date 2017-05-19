@@ -28,7 +28,8 @@ public class DBConn {
 	
 	
 	/**
-	 * Metodo que cria a função e devolve uma conexão à base de dados
+	 * Metodo que cria a função e devolve uma conexão à base de dados.
+	 * 
 	 * @return Connection
 	 * @throws Exception
 	 */
