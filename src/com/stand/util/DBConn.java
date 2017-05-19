@@ -1,4 +1,4 @@
-package com.develop_minura.util;
+package com.stand.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

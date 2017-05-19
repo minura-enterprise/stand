@@ -1,4 +1,4 @@
-package com.develop_minura.controller;
+package com.stand.controller;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.develop_minura.service.SWeb;
+import com.stand.service.SWeb;
 
 /**
  * Servlet implementation class HWeb

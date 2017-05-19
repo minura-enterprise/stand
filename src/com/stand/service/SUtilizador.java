@@ -1,8 +1,8 @@
-package com.develop_minura.service;
+package com.stand.service;
 
 import java.util.ArrayList;
 
-import com.develop_minura.model.Utilizador;
+import com.stand.model.Utilizador;
 
 public class SUtilizador {
 	

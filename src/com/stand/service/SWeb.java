@@ -1,8 +1,8 @@
-package com.develop_minura.service;
+package com.stand.service;
 
 import java.util.ArrayList;
 
-import com.develop_minura.model.Web;
+import com.stand.model.Web;
 
 public class SWeb {
 	private ArrayList<Web> arWeb;

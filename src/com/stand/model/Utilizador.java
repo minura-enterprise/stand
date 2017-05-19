@@ -1,4 +1,4 @@
-package com.develop_minura.model;
+package com.stand.model;
 
 import java.util.ArrayList;
 

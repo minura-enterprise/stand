@@ -1,4 +1,4 @@
-package com.develop_minura.util;
+package com.stand.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.develop_minura.model.MySQL;
+import com.stand.model.MySQL;
 
 public class DBConnection {
 	

@@ -1,4 +1,4 @@
-package com.develop_minura.controller;
+package com.stand.controller;
 
 import java.io.IOException;
 
@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.develop_minura.model.Utilizador;
-import com.develop_minura.service.SUtilizador;
-import com.develop_minura.util.DBUtilizador;
+import com.stand.model.Utilizador;
+import com.stand.service.SUtilizador;
+import com.stand.util.DBUtilizador;
 
 @WebServlet("/HUtilizador")
 public class HUtilizador extends HttpServlet {

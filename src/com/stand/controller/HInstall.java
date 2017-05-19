@@ -1,4 +1,4 @@
-package com.develop_minura.controller;
+package com.stand.controller;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.develop_minura.model.Utilizador;
-import com.develop_minura.util.DBConn;
+import com.stand.model.Utilizador;
+import com.stand.util.DBConn;
 
 /**
  * Servlet implementation class HInstall

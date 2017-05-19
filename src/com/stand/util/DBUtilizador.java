@@ -1,11 +1,11 @@
-package com.develop_minura.util;
+package com.stand.util;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.develop_minura.model.Utilizador;
+import com.stand.model.Utilizador;
 
 public class DBUtilizador {
 	
