@@ -34,7 +34,10 @@ public class HInstall extends HttpServlet {
 		// Arranque do servLet
 		request.getRequestDispatcher("install.jsp").forward(request, response);
 		
-		/*try {
+		/*
+		 * Isto tem que ser criado dentro de um metodo.
+		 
+		 try {
 			Connection con = DBConn.createConnection();
 			DBConn.createTable(con,"CREATE TABLE IF NOT EXISTS utilizadores (ID int NOT NULL AUTO_INCREMENT, username varchar(40), tipo int DEFAULT '1', nome varchar(40), sobrenome varchar(40), nacionalidade varchar(50), morada varchar(200), localidade varchar(60), codigoPostal varchar(11), contacto varchar(10), email varchar(200), password varchar(40), isOnline bit DEFAULT 0, isDeleted bit DEFAULT 0, PRIMARY KEY(ID), UNIQUE (username, email));");
 			DBConn.createTable(con,"CREATE TABLE IF NOT EXISTS tipos (ID int NOT NULL AUTO_INCREMENT, nome varchar(40), PRIMARY KEY(ID), UNIQUE(nome));");

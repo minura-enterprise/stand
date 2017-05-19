@@ -519,7 +519,7 @@
                             10GB of <strong>250GB</strong> Free.
                         </div>
                         <div>
-                            <strong>Copyright</strong> Example Company © 2017
+                            <strong>Copyright</strong> Minura Enterprise 2017.
                         </div>
                     </div>
                 </div>
