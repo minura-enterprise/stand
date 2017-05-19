@@ -45,6 +45,9 @@ public class HVenda extends HttpServlet {
 				response.getWriter().append("Nome: "+cli.getNome()+"Nome vendedor: "+vend.getNome()+"Marca Viatura: "+via.getMarca());
 				//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
+	
+	
+	
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
