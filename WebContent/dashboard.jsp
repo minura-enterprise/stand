@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@ page import="java.util.ArrayList, com.develop_minura.model.Utilizador" %>
+<%@ page import="java.util.ArrayList, com.stand.model.Utilizador" %>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
