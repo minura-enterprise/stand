@@ -1,99 +1,48 @@
 package com.stand.model;
 
+
 public class Pessoa {
 	
-	private	int		ID;
-	private String	nome,
-					sobrenome,
-					nacionalidade,
-					morada,
-					localidade,
-					cp,
-					contacto,
-					email;
+	int id;
+	String nome, email, contacto, contactoAlt;
 	
-	public Pessoa(String nome, String sobrenome, String nacionalidade, String morada, String localidade,
-			String cp, String contacto, String email) {
+	public Pessoa(int id, String nome, String email, String contacto, String contactoAlt) {
 		super();
+		this.id = id;
 		this.nome = nome;
-		this.sobrenome = sobrenome;
-		this.nacionalidade = nacionalidade;
-		this.morada = morada;
-		this.localidade = localidade;
-		this.cp = cp;
-		this.contacto = contacto;
 		this.email = email;
+		this.contacto = contacto;
+		this.contactoAlt = contactoAlt;
 	}
-
-	public int getID() {
-		return ID;
+	public int getId() {
+		return id;
 	}
-
-	public void setID(int iD) {
-		ID = iD;
+	public void setId(int id) {
+		this.id = id;
 	}
-
 	public String getNome() {
 		return nome;
 	}
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public String getSobrenome() {
-		return sobrenome;
-	}
-
-	public void setSobrenome(String sobrenome) {
-		this.sobrenome = sobrenome;
-	}
-
-	public String getNacionalidade() {
-		return nacionalidade;
-	}
-
-	public void setNacionalidade(String nacionalidade) {
-		this.nacionalidade = nacionalidade;
-	}
-
-	public String getMorada() {
-		return morada;
-	}
-
-	public void setMorada(String morada) {
-		this.morada = morada;
-	}
-
-	public String getLocalidade() {
-		return localidade;
-	}
-
-	public void setLocalidade(String localidade) {
-		this.localidade = localidade;
-	}
-
-	public String getCp() {
-		return cp;
-	}
-
-	public void setCp(String cp) {
-		this.cp = cp;
-	}
-
-	public String getContacto() {
-		return contacto;
-	}
-
-	public void setContacto(String contacto) {
-		this.contacto = contacto;
-	}
-
 	public String getEmail() {
 		return email;
 	}
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public String getContacto() {
+		return contacto;
+	}
+	public void setContacto(String contacto) {
+		this.contacto = contacto;
+	}
+	public String getContactoAlt() {
+		return contactoAlt;
+	}
+	public void setContactoAlt(String contactoAlt) {
+		this.contactoAlt = contactoAlt;
+	}
+
 }
