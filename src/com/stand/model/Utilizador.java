@@ -8,10 +8,10 @@ public class Utilizador extends Pessoa{
 					isDeleted;
 	private int		tipo;
 	
-	public Utilizador(int iD, String nome, String sobrenome, String nacionalidade, String morada, String localidade,
+	public Utilizador(String nome, String sobrenome, String nacionalidade, String morada, String localidade,
 			String codigoPostal, String contacto, String email, String username, String password, boolean isOnline,
 			boolean isDeleted, int tipo) {
-		super(iD, nome, sobrenome, nacionalidade, morada, localidade, codigoPostal, contacto, email);
+		super(nome, sobrenome, nacionalidade, morada, localidade, codigoPostal, contacto, email);
 		this.username = username;
 		this.password = password;
 		this.isOnline = isOnline;

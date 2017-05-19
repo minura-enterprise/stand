@@ -11,10 +11,9 @@ public class Pessoa {
 					codigoPostal,
 					contacto,
 					email;
-	public Pessoa(int iD, String nome, String sobrenome, String nacionalidade, String morada, String localidade,
+	public Pessoa(String nome, String sobrenome, String nacionalidade, String morada, String localidade,
 			String codigoPostal, String contacto, String email) {
 		super();
-		ID = iD;
 		this.nome = nome;
 		this.sobrenome = sobrenome;
 		this.nacionalidade = nacionalidade;

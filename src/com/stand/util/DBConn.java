@@ -169,7 +169,7 @@ public class DBConn {
 	 * @param query
 	 * @throws Exception
 	 */
-	public static void insertIntoTable(Connection con, String query) throws Exception {
+	public static boolean insertIntoTable(Connection con, String query) throws Exception {
 
 		Statement stmt = null;
 		
@@ -191,9 +191,11 @@ public class DBConn {
 				try{
 					stmt.close();
 				}catch (SQLException se) {}
-				
+
 				stmt=null;
+				return true;
 			}
 		}
+		return false;
 	}
 }

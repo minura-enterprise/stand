@@ -128,27 +128,27 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <form class="form-horizontal" >
+                                        <form class="form-horizontal" action="HInstall" method="post">
                                             <div class="tab-content">
                                                 <div class="tab-pane active" id="tab1">
                                                     <div class="form-group">
                                                         <label class="col-md-1 control-label">Nome</label>
                                                         <div class="col-md-11">
-                                                            <input class="form-control" name="u_nome" type="text">
+                                                            <input class="form-control" name="u_nome" type="text" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
                                                         <label class=" col-md-1 control-label">Sobrenome</label>
                                                         <div class="col-md-11">
-                                                            <input class="form-control" name="u_snome" type="text">
+                                                            <input class="form-control" name="u_snome" type="text" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
                                                         <label class=" col-md-1 control-label">Nacionalidade</label>
                                                         <div class="col-md-11">
-                                                            <select name="u_nacionalidade" class="form-control select2">
+                                                            <select name="u_nacionalidade" class="form-control select2" required="">
 																<option value="AF">Afghanistan</option>
 																<option value="AX">Åland Islands</option>
 																<option value="AL">Albania</option>
@@ -326,7 +326,7 @@
 																<option value="PH">Philippines</option>
 																<option value="PN">Pitcairn</option>
 																<option value="PL">Poland</option>
-																<option value="PT">Portugal</option>
+																<option value="PT" selected>Portugal</option>
 																<option value="PR">Puerto Rico</option>
 																<option value="QA">Qatar</option>
 																<option value="RE">Réunion</option>
@@ -406,7 +406,7 @@
                                                     <div class="form-group">
                                                         <label class=" col-md-1 control-label">Morada</label>
                                                         <div class="col-md-11">
-                                                            <input class="form-control" name="u_morada" type="text">
+                                                            <input class="form-control" name="u_morada" type="text" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
@@ -414,7 +414,7 @@
                                                     <div class="form-group">
                                                         <label class=" col-md-1 control-label">Localidade</label>
                                                         <div class="col-md-11">
-                                                            <input class="form-control" name="u_localidade" type="text">
+                                                            <input class="form-control" name="u_localidade" type="text" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
@@ -422,7 +422,7 @@
                                                     <div class="form-group">
                                                         <label class=" col-md-1 control-label">Codigo Postal</label>
                                                         <div class="col-md-11">
-                                                            <input class="form-control" name="u_cp" type="text">
+                                                            <input class="form-control" name="u_cp" type="text" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
@@ -430,7 +430,7 @@
                                                   	<div class="form-group">
                                                         <label class=" col-md-1 control-label">Contacto</label>
                                                         <div class="col-md-11">
-                                                            <input class="form-control" name="u_contacto" type="text">
+                                                            <input class="form-control" name="u_contacto" type="text" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->  
@@ -439,28 +439,28 @@
                                                     <div class="form-group">
                                                         <label class=" col-md-3 control-label">Email</label>
                                                         <div class="col-md-9">
-                                                            <input class="form-control" name="u_email" type="email">
+                                                            <input class="form-control" name="u_email" type="email" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
                                                         <label class=" col-md-3 control-label">Username</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="u_username" type="text">
+                                                            <input class="form-control" name="u_username" type="text" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
                                                         <label class=" col-md-3 control-label">Password</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="u_password" type="password">
+                                                            <input class="form-control" name="u_password" type="password" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
                                                         <label class=" col-md-3 control-label">Novamente a mesma password</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="u_password_2" type="password">
+                                                            <input class="form-control" name="u_password_2" type="password" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
@@ -469,42 +469,43 @@
                                                     <div class="form-group">
                                                         <label class=" col-md-3 control-label">Nome</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="w_nome" type="text">
+                                                            <input class="form-control" name="w_nome" type="text" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
                                                         <label class=" col-md-3 control-label">Morada</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="w_morada" type="text">
+                                                            <input class="form-control" name="w_morada" type="text" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
                                                         <label class=" col-md-3 control-label">Localidade</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="w_localidade" type="text">
+                                                            <input class="form-control" name="w_localidade" type="text" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
                                                         <label class=" col-md-3 control-label">Codigo Postal</label>
                                                         <div class=" col-md-9">
-                                                            <input class="form-control" name="w_localidade" type="text">
+                                                            <input class="form-control" name="w_localidade" type="text" required="">
                                                         </div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                 </div>
                                             </div>
+	                                        <ul class="pager">
+	                                            <li class="previous"><a href="#">&larr; Anterior</a>
+	                                            </li>
+	                                            <li class="next"><a href="#">Proximo &rarr;</a>
+	                                            </li>
+	                                            <li class="next finish" style="display:none;">
+	                                            	<button type="submit" name="install_web">Instalar</button>
+	                                            </li>
+	                                        </ul>
                                         </form>
-                                        <ul class="pager">
-                                            <li class="previous"><a href="#">&larr; Back</a>
-                                            </li>
-                                            <li class="next"><a href="#">Next &rarr;</a>
-                                            </li>
-                                            <li class="next finish" style="display:none;"><a href="#">Finish</a>
-                                            </li>
-                                        </ul>
                                     </div>
                                     <!-- End .bwizard -->
 
@@ -516,9 +517,6 @@
                     <div class="clearfix"></div>
                     <div class="footer">
                         <div class="pull-right">
-                            10GB of <strong>250GB</strong> Free.
-                        </div>
-                        <div>
                             <strong>Copyright</strong> Minura Enterprise 2017.
                         </div>
                     </div>
