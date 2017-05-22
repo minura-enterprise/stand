@@ -48,7 +48,7 @@ public class SUtilizador {
 				String email = rs.getString("email");
 				String contacto = rs.getString("contacto");
 				int cat = rs.getInt("categoria");
-				boolean isDel = rs.getBoolean("isDelete");
+				boolean isDel = rs.getBoolean("isDeleted");
 				boolean isOn  = rs.getBoolean("isOnline");
 					
 				
@@ -80,12 +80,53 @@ public class SUtilizador {
 			if(currentCon != null){
 				try{
 					currentCon.close();
-				} catch (Exception e) {}				}
-				currentCon = null;
+				} catch (Exception e) {}
 			}
+			currentCon = null;
+		}
 		return u;
 	}
+	
+
+	public static void insertDBUtilizador(Utilizador u){
+		PreparedStatement pstmt = null;
 		
+		try {
+			
+			currentCon = InitConnManager.getConnection();
+			String sql = "INSERT INTO `utilizadores`(`nome`, `sobrenome`, `email`, `contacto`, `categoria`, `username`, `password`) "
+					+ "VALUES ('"+u.getNome()+"','"+u.getSobrenome()+"','"+u.getEmail()+"','"+u.getContacto()+"','"+u.getCategoria()+"','"+u.getUsername()+"','"+u.getPassword()+"');";
+			pstmt = currentCon.prepareStatement(sql);
+			pstmt.executeUpdate();
+			System.out.println("Utilizador inserido: " + u.getNome());
+			
+		} catch (Exception e) {
+			System.out.println("Erro ao inserir: "+e);
+		} finally{
+			if(rs != null){
+				try {
+					rs.close();
+				} catch (Exception e) {
+					rs = null;
+				}
+			}
+			
+			if(pstmt != null){
+				try {
+					pstmt.close();
+				} catch (Exception e) {
+					pstmt = null;
+				}
+			}
+			
+			if(currentCon != null){
+				try {
+					currentCon.close();
+				} catch (Exception e) {}
+			}
+			currentCon = null;
+		}
+	}
 	
 	public static ArrayList<Utilizador> getDBUtilizador(){
 		Statement stmt = null;
@@ -108,7 +149,7 @@ public class SUtilizador {
 				int categoria = rs.getInt("categoria");
 				String username = rs.getString("username");
 				String password = rs.getString("password");
-				boolean isDeleted = rs.getBoolean("isDelete");
+				boolean isDeleted = rs.getBoolean("isDeleted");
 				boolean isOnline = rs.getBoolean("isOnline");
 				
 				u = new Utilizador(id, nome, sobrenome, email, contacto, categoria, username, password, isDeleted, isOnline);

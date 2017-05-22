@@ -1,6 +1,7 @@
 package com.stand.service;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -17,6 +18,46 @@ public class SStand {
 	public SStand(){
 		super();
 		this.arStand = new ArrayList<Stand>();
+	}
+	
+	public static void insertDBStand(Stand s){
+		PreparedStatement pstmt = null;
+		
+		try {
+			
+			currentCon = InitConnManager.getConnection();
+			String sql = "INSERT INTO `stands`(`nome`, `contacto`, `morada`, `localidade`, `codigoPostal`, `hora_abertura`, `hora_fecho`, `id_responsavel`) "
+					+ "VALUES ('"+s.getNome()+"','"+s.getContacto()+"','"+s.getMorada()+"','"+s.getLocalidade()+"','"+s.getCodigoPostal()+"','"+s.getHora_abertura()+"','"+s.getHora_fecho()+"','"+s.getResponsavel()+"');";
+			pstmt = currentCon.prepareStatement(sql);
+			pstmt.executeUpdate();
+			System.out.println("Stand inserido: " + s.getNome());
+			
+		} catch (Exception e) {
+			System.out.println("Erro ao inserir: "+e);
+		} finally{
+			if(rs != null){
+				try {
+					rs.close();
+				} catch (Exception e) {
+					rs = null;
+				}
+			}
+			
+			if(pstmt != null){
+				try {
+					pstmt.close();
+				} catch (Exception e) {
+					pstmt = null;
+				}
+			}
+			
+			if(currentCon != null){
+				try {
+					currentCon.close();
+				} catch (Exception e) {}
+			}
+			currentCon = null;
+		}
 	}
 	
 	public static ArrayList<Stand> getDBStand(){
@@ -54,7 +95,7 @@ public class SStand {
 			}
 			
 		} catch (Exception ex) {
-			System.out.println("Erro ao carregar os stans!");
+			System.out.println("Erro ao carregar os stands!");
 			System.out.println("Erro: "+ ex);
 		} finally {
 			if (rs != null){

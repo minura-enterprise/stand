@@ -128,7 +128,7 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <form class="form-horizontal" action="HWeb" method="post">
+                                        <form class="form-horizontal" action="HMinuraInstall" method="post">
                                             <div class="tab-content">
                                                 <div class="tab-pane active" id="tab1">
                                                     <div class="form-group">
@@ -502,7 +502,7 @@
                                                     <div class="form-group">
                                                         <label class="col-md-3 control-label">Localidade</label>
                                                         <div class="col-md-6">
-                                                            <input class="form-control" name="s_localidade" type="text" required="">
+                                                            <input class="form-control" name="s_local" type="text" required="">
                                                         </div>
                                                         <div class="col-md-offset-3"></div>
                                                     </div>
@@ -511,7 +511,7 @@
                                                     <div class="form-group">
                                                         <label class="col-md-3 control-label">Codigo Postal</label>
                                                         <div class="col-md-6">
-                                                            <input class="form-control" name="s_codigoPostal" type="text" required="">
+                                                            <input class="form-control" name="s_cp" type="text" required="">
                                                         </div>
                                                         <div class="col-md-offset-3"></div>
                                                     </div>
@@ -521,6 +521,24 @@
                                                         <label class="col-md-3 control-label">Contacto</label>
                                                         <div class="col-md-6">
                                                             <input class="form-control" name="s_contacto" type="text" required="">
+                                                        </div>
+                                                        <div class="col-md-offset-3"></div>
+                                                    </div>
+                                                    <!-- End .control-group  -->
+                                                    
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label">Hora Abertura</label>
+                                                        <div class="col-md-6">
+                                                            <input class="form-control" name="s_ha" type="time" required="">
+                                                        </div>
+                                                        <div class="col-md-offset-3"></div>
+                                                    </div>
+                                                    <!-- End .control-group  -->
+                                                    
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label">Hora Fecho</label>
+                                                        <div class="col-md-6">
+                                                            <input class="form-control" name="s_hf" type="time" required="">
                                                         </div>
                                                         <div class="col-md-offset-3"></div>
                                                     </div>
