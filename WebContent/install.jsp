@@ -44,7 +44,7 @@
                 <div class="page-header-inner ">
                     <!-- BEGIN LOGO -->
                     <div class="page-logo">
-                        <a href="install.jsp">
+                        <a href="dashboard.jsp">
                             <img src="assets/images/logotipo.png" alt="absolute admin" class="img-responsive logo-default"/> </a>
 
                     </div><div class="menu-toggler sidebar-toggler">
@@ -128,7 +128,7 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <form class="form-horizontal" action="HMinuraInstall" method="post">
+                                        <form class="form-horizontal" action="HWeb" method="post">
                                             <div class="tab-content">
                                                 <div class="tab-pane active" id="tab1">
                                                     <div class="form-group">
