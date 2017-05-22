@@ -55,6 +55,11 @@
         <div class="container">
             <div class="row">
                 <div class="account-col text-center">
+                	<%
+                		if(request.getParameterMap().containsKey("Logout")){
+                			out.append("<h3>Sessão terminada!</h3>");
+                		}
+                	%>
                     <h1><i>Minura</i> Stand</h1>
                     <h3>Entrar na conta</h3>
                     <form class="m-t" role="form" action="HLogin" method="post">

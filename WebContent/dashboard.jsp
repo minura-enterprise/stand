@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import="java.util.ArrayList, com.stand.model.Utilizador" %>
+<% Utilizador user = (Utilizador) (session.getAttribute("currentSessionUser"));%>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
@@ -102,7 +103,7 @@
                                             <i class="icon-lock"></i> Bloqueio de conta</a>
                                     </li>
                                     <li>
-                                        <a href="page_user_login_1.html">
+                                        <a href="HLogout">
                                             <i class="icon-key"></i> Terminar Sessão</a>
                                     </li>
                                 </ul>
@@ -111,7 +112,7 @@
                             <!-- BEGIN QUICK SIDEBAR TOGGLER -->
                             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                             <li class="dropdown dropdown-quick-sidebar-toggler">
-                                <a href="#" class="dropdown-toggle">
+                                <a href="HLogout" class="dropdown-toggle">
                                     <i class="icon-logout"></i>
                                 </a>
                             </li>
@@ -148,9 +149,9 @@
                             
                             <li class="nav-heading"><span>Mais	</span></li>
                             <li>
-                                <a href="#"><i class="fa fa-users"></i> <span class="nav-label"></span><span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-users"></i> <span class="nav-label"></span><%= user.getNome()+" "+user.getSobrenome() %><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="#"><i class="fa fa-user"></i> <span class="nav-label">Perfil</span></a></li>
+                                    <li><a href="HProfile?<%=user.getUsername()%>"><i class="fa fa-user"></i> <span class="nav-label">Perfil</span></a></li>
                                     <li><a href="#"><i class="fa fa-cogs"></i> <span clasS="nav-label">Definições</span></a></li>
                                 </ul>
                             </li>
