@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
-<%@ page import="java.util.ArrayList, com.stand.model.Utilizador" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
@@ -45,7 +45,7 @@
                     <!-- BEGIN LOGO -->
                     <div class="page-logo">
                         <a href="install.jsp">
-                            <img src="assets/images/logo.png" alt="absolute admin" class="img-responsive logo-default"/> </a>
+                            <img src="assets/images/logotipo.png" alt="absolute admin" class="img-responsive logo-default"/> </a>
 
                     </div><div class="menu-toggler sidebar-toggler">
                         <a href="javascript:;" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></a>
@@ -68,7 +68,7 @@
                             <li>
                                 <a href="#"><i class="icon-grid"></i> <span class="nav-label">Dashboard</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="index.html">InstalaÃ§Ã£o</a></li>
+                                    <li><a href="HIntall">Instalação</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -86,11 +86,11 @@
                                 <div class="page-title">
                                     <div class="row">
 
-                                        <h4 class="pull-left">InstalaÃ§Ã£o do Stand</h4>
+                                        <h4 class="pull-left">Instalação do Stand</h4>
 
                                         <ol class="breadcrumb pull-right">
                                             <li><a href="javascript: void(0);"><i class="fa fa-home"></i></a></li>
-                                            <li>InstalaÃ§Ã£o</li>
+                                            <li>Instalação</li>
                                         </ol>
 
                                     </div>
@@ -128,29 +128,31 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <form class="form-horizontal" action="HInstall" method="post">
+                                        <form class="form-horizontal" action="HWeb" method="post">
                                             <div class="tab-content">
                                                 <div class="tab-pane active" id="tab1">
                                                     <div class="form-group">
-                                                        <label class="col-md-1 control-label">Nome</label>
-                                                        <div class="col-md-11">
+                                                        <label class="col-md-3 control-label">Nome</label>
+                                                        <div class="col-md-6">
                                                             <input class="form-control" name="u_nome" type="text" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
-                                                        <label class=" col-md-1 control-label">Sobrenome</label>
-                                                        <div class="col-md-11">
+                                                        <label class="col-md-3 control-label">Sobrenome</label>
+                                                        <div class="col-md-6">
                                                             <input class="form-control" name="u_snome" type="text" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
-                                                        <label class=" col-md-1 control-label">Nacionalidade</label>
-                                                        <div class="col-md-11">
+                                                        <label class=" col-md-3 control-label">Nacionalidade</label>
+                                                        <div class="col-md-6">
                                                             <select name="u_nacionalidade" class="form-control select2" required="">
 																<option value="AF">Afghanistan</option>
-																<option value="AX">Ã…land Islands</option>
+																<option value="AX">Åland Islands</option>
 																<option value="AL">Albania</option>
 																<option value="DZ">Algeria</option>
 																<option value="AS">American Samoa</option>
@@ -203,10 +205,10 @@
 																<option value="CD">Congo, the Democratic Republic of the</option>
 																<option value="CK">Cook Islands</option>
 																<option value="CR">Costa Rica</option>
-																<option value="CI">CÃ´te d'Ivoire</option>
+																<option value="CI">Côte d'Ivoire</option>
 																<option value="HR">Croatia</option>
 																<option value="CU">Cuba</option>
-																<option value="CW">CuraÃ§ao</option>
+																<option value="CW">Curaçao</option>
 																<option value="CY">Cyprus</option>
 																<option value="CZ">Czech Republic</option>
 																<option value="DK">Denmark</option>
@@ -329,11 +331,11 @@
 																<option value="PT" selected>Portugal</option>
 																<option value="PR">Puerto Rico</option>
 																<option value="QA">Qatar</option>
-																<option value="RE">RÃ©union</option>
+																<option value="RE">Réunion</option>
 																<option value="RO">Romania</option>
 																<option value="RU">Russian Federation</option>
 																<option value="RW">Rwanda</option>
-																<option value="BL">Saint BarthÃ©lemy</option>
+																<option value="BL">Saint Barthélemy</option>
 																<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
 																<option value="KN">Saint Kitts and Nevis</option>
 																<option value="LC">Saint Lucia</option>
@@ -400,98 +402,127 @@
 																<option value="ZW">Zimbabwe</option>
 		                                                    </select>
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     
                                                     <div class="form-group">
-                                                        <label class=" col-md-1 control-label">Morada</label>
-                                                        <div class="col-md-11">
+                                                        <label class="col-md-3 control-label">Morada</label>
+                                                        <div class="col-md-6">
                                                             <input class="form-control" name="u_morada" type="text" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     
                                                     <div class="form-group">
-                                                        <label class=" col-md-1 control-label">Localidade</label>
-                                                        <div class="col-md-11">
+                                                        <label class="col-md-3 control-label">Localidade</label>
+                                                        <div class="col-md-6">
                                                             <input class="form-control" name="u_localidade" type="text" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     
                                                     <div class="form-group">
-                                                        <label class=" col-md-1 control-label">Codigo Postal</label>
-                                                        <div class="col-md-11">
-                                                            <input class="form-control" name="u_cp" type="text" required="">
+                                                        <label class="col-md-3 control-label">Codigo Postal</label>
+                                                        <div class="col-md-6">
+                                                            <input class="form-control" name="u_codigoPostal" type="text" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                   
-                                                  	<div class="form-group">
-                                                        <label class=" col-md-1 control-label">Contacto</label>
-                                                        <div class="col-md-11">
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label">Contacto</label>
+                                                        <div class="col-md-6">
                                                             <input class="form-control" name="u_contacto" type="text" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
-                                                    <!-- End .control-group  -->  
+                                                    <!-- End .control-group  -->
                                                 </div>
+
+
                                                 <div class="tab-pane" id="tab2">
                                                     <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Email</label>
-                                                        <div class="col-md-9">
+                                                        <label class="col-md-3 control-label">E-mail</label>
+                                                        <div class="col-md-6">
                                                             <input class="form-control" name="u_email" type="email" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                     <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Username</label>
-                                                        <div class=" col-md-9">
+                                                        <label class="col-md-3 control-label">Username</label>
+                                                        <div class="col-md-6">
                                                             <input class="form-control" name="u_username" type="text" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
+
                                                     <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Password</label>
-                                                        <div class=" col-md-9">
+                                                        <label class="col-md-3 control-label">Password</label>
+                                                        <div class="col-md-6">
                                                             <input class="form-control" name="u_password" type="password" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
+
                                                     <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Novamente a mesma password</label>
-                                                        <div class=" col-md-9">
+                                                        <label class="col-md-3 control-label">Repita a password</label>
+                                                        <div class="col-md-6">
                                                             <input class="form-control" name="u_password_2" type="password" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                 </div>
                                                 <div class="tab-pane" id="tab3">
                                                     <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Nome</label>
-                                                        <div class=" col-md-9">
-                                                            <input class="form-control" name="w_nome" type="text" required="">
+                                                        <label class="col-md-3 control-label">Nome</label>
+                                                        <div class="col-md-6">
+                                                            <input class="form-control" name="s_nome" type="text" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
+
                                                     <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Morada</label>
-                                                        <div class=" col-md-9">
-                                                            <input class="form-control" name="w_morada" type="text" required="">
+                                                        <label class="col-md-3 control-label">Morada</label>
+                                                        <div class="col-md-6">
+                                                            <input class="form-control" name="s_morada" type="text" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
+
                                                     <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Localidade</label>
-                                                        <div class=" col-md-9">
-                                                            <input class="form-control" name="w_localidade" type="text" required="">
+                                                        <label class="col-md-3 control-label">Localidade</label>
+                                                        <div class="col-md-6">
+                                                            <input class="form-control" name="s_localidade" type="text" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
+
                                                     <div class="form-group">
-                                                        <label class=" col-md-3 control-label">Codigo Postal</label>
-                                                        <div class=" col-md-9">
-                                                            <input class="form-control" name="w_localidade" type="text" required="">
+                                                        <label class="col-md-3 control-label">Codigo Postal</label>
+                                                        <div class="col-md-6">
+                                                            <input class="form-control" name="s_codigoPostal" type="text" required="">
                                                         </div>
+                                                        <div class="col-md-offset-3"></div>
+                                                    </div>
+                                                    <!-- End .control-group  -->
+
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label">Contacto</label>
+                                                        <div class="col-md-6">
+                                                            <input class="form-control" name="s_contacto" type="text" required="">
+                                                        </div>
+                                                        <div class="col-md-offset-3"></div>
                                                     </div>
                                                     <!-- End .control-group  -->
                                                 </div>
@@ -502,7 +533,7 @@
 	                                            <li class="next"><a href="#">Proximo &rarr;</a>
 	                                            </li>
 	                                            <li class="next finish" style="display:none;">
-	                                            	<button type="submit" name="install_web">Instalar</button>
+	                                            	<a><button style="decoration:none;" type="submit" name="web_install">Instalar</button></a>
 	                                            </li>
 	                                        </ul>
                                         </form>

@@ -1,4 +1,18 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.ArrayList, com.stand.model.Stand" %>
+<%
+	ArrayList arStand = (ArrayList) request.getAttribute("listaWeb");
+	Stand s = null;
+	for(int i=0; i < arStand.size(); i++){
+		if(i==0){
+			s = (Stand) arStand.get(i);
+		}
+	}
+	
+	if(s == null){
+		out.append("<h1>Pois...</h1>");
+	}
+%>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
@@ -6,7 +20,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Minura Stand - Login</title>
+        <title><%=s.getNome()%> - Login</title>
 
         <!-- WEB FONTS : use %7C instead of | (pipe) -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
@@ -53,7 +67,7 @@
                         <button type="submit" name="log_ut" class="btn btn-primary btn-block ">Login</button>
                         <a href="#"><small>Esqueceu-se da password?</small></a>
                         <p class=" text-center"><small>Ainda não tens uma conta?</small></p>
-                        <a class="btn  btn-default btn-block" href="register.jsp">Criar uma conta</a>
+                        <a class="btn  btn-default btn-block" href="#">Criar uma conta</a>
                         <p>&copy; Minura Enterprise 2017.</p>
                     </form>
                 </div>
