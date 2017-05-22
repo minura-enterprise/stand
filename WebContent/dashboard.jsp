@@ -48,9 +48,8 @@
                 <div class="page-header-inner ">
                     <!-- BEGIN LOGO -->
                     <div class="page-logo">
-                        <a href="index.jsp">
-                            <img src="assets/images/logo.png" alt="absolute admin" class="img-responsive logo-default"/>
-                        </a>
+                        <a href="dashboard.jsp">
+                            <img src="assets/images/logotipo.png" alt="absolute admin" class="img-responsive logo-default"/> </a>
 
                     </div><div class="menu-toggler sidebar-toggler">
                         <a href="javascript:;" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></a>
@@ -128,14 +127,15 @@
             <div class="clearfix"> </div>
             <!-- END HEADER & CONTENT DIVIDER -->
 
-            <!-- BEGIN CONTAINER -->
+           <!-- BEGIN CONTAINER -->
             <div class="page-container">
 
                 <aside class="sidebar">
                     <nav class="sidebar-nav">
                         <ul class="metismenu" id="menu">
-                            <li class="active">
-                                <a href="index.jsp"><i class="icon-grid"></i> <span class="nav-label">Dashboard</span></a>
+                            <li>
+                                <a href="dashboard.jsp"><i class="icon-grid"></i> <span class="nav-label">Dashboard</span></a>
+                             
                             </li>
                             <li class="nav-heading"><span>Administração</span></li>
                             <li>
@@ -144,14 +144,49 @@
                                     <li><a href="#"><i class="fa fa-search"></i> <span class="nav-label">Pesquisar</span></a></li>
                                     <li><a href="#"><i class="fa fa-list-ol"></i> <span class="nav-label">Listar</span></a></li>
                                     <li><a href="#"><i class="fa fa-user-plus"></i> <span clasS="nav-label">Adicionar</span></a></li>
+                                  </ul>   
+                            </li>
+                             <li>
+                                <a href="#"><i class="fa fa-user"></i> <span class="nav-label">Clientes</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">                               
+                                    <li><a href="#"><i class="fa fa-search"></i> <span class="nav-label">Pesquisar</span></a></li>
+                                    <li><a href="#"><i class="fa fa-list-ol"></i> <span class="nav-label">Listar</span></a></li>
+                                 
+                                    <li><a href="cliente.jsp"><i class="fa fa-user-plus"></i> <span class="nav-label">Adicionar</span></a><li>
                                 </ul>
                             </li>
-                            
+                            <li>
+                                <a href="#"><i class="fa fa-eye"></i> <span class="nav-label">Vendedores</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">                               
+                                    <li><a href="#"><i class="fa fa-search"></i> <span class="nav-label">Pesquisar</span></a></li>
+                                    <li><a href="#"><i class="fa fa-list-ol"></i> <span class="nav-label">Listar</span></a></li>
+                                 
+                                    <li><a href="responsavelvenda.jsp"><i class="fa fa-user-plus"></i> <span class="nav-label">Adicionar</span></a><li>
+                                </ul>
+                            </li>
+                             <li>
+                                <a href="#"><i class="fa fa-black-tie"></i> <span class="nav-label">Responsaveis de Venda</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">                               
+                                    <li><a href="#"><i class="fa fa-search"></i> <span class="nav-label">Pesquisar</span></a></li>
+                                    <li><a href="#"><i class="fa fa-list-ol"></i> <span class="nav-label">Listar</span></a></li>
+                                 
+                                    <li><a href="responsavelstand.jsp"><i class="fa fa-user-plus"></i> <span class="nav-label">Adicionar</span></a><li>
+                                </ul>
+                            </li>
+                             <li>
+                                <a href="#"><i class="fa fa-car"></i> <span class="nav-label">Viaturas</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">                               
+                                    <li><a href="#"><i class="fa fa-search"></i> <span class="nav-label">Pesquisar</span></a></li>
+                                    <li><a href="#"><i class="fa fa-list-ol"></i> <span class="nav-label">Listar</span></a></li>
+                                 
+                                    <li><a href="viatura.jsp"><i class="fa fa-plus"></i> <span class="nav-label">Adicionar</span></a><li>
+                                </ul>
+                            </li>
                             <li class="nav-heading"><span>Mais	</span></li>
                             <li>
-                                <a href="#"><i class="fa fa-users"></i> <span class="nav-label"></span><%= user.getNome()+" "+user.getSobrenome() %><span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-users"></i> <span class="nav-label"></span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="HProfile?<%=user.getUsername()%>"><i class="fa fa-user"></i> <span class="nav-label">Perfil</span></a></li>
+                                    <li><a href="#"><i class="fa fa-user"></i> <span class="nav-label">Perfil</span></a></li>
                                     <li><a href="#"><i class="fa fa-cogs"></i> <span clasS="nav-label">Definições</span></a></li>
                                 </ul>
                             </li>
