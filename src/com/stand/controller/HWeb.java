@@ -20,7 +20,7 @@ public class HWeb extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	private STipo servTipo;
-	private SUtilizador servUtilizador;
+	//private SUtilizador servUtilizador;
 	private SStand servStand;
 	
     /**
@@ -28,10 +28,13 @@ public class HWeb extends HttpServlet {
      */
     public HWeb() {
         super();
+        
         this.servTipo = new STipo();
         this.servTipo.setArTipo(STipo.getDBTipo());
-        this.servUtilizador = new SUtilizador();
-        this.servUtilizador.setArUtilizador(SUtilizador.getDBUtilizador());
+        
+        //this.servUtilizador = new SUtilizador();
+        //this.servUtilizador.setArUtilizador(SUtilizador.getDBUtilizador());
+        
         this.servStand = new SStand();
         this.servStand.setArStand(SStand.getDBStand());
     }
@@ -43,6 +46,7 @@ public class HWeb extends HttpServlet {
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		if(this.servStand.getArStand().isEmpty()){
+			request.setAttribute("listaTipos", this.servTipo.getArTipo());
 			request.getRequestDispatcher("install.jsp").forward(request, response);
 		}else{
 			request.setAttribute("listaWeb", this.servStand.getArStand());

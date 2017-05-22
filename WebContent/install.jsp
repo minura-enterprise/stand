@@ -128,7 +128,7 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <form class="form-horizontal" action="HWeb" method="post">
+                                        <form class="form-horizontal" action="HMinuraInstall" method="post">
                                             <div class="tab-content">
                                                 <div class="tab-pane active" id="tab1">
                                                     <div class="form-group">
