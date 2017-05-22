@@ -1,6 +1,7 @@
 package com.stand.service;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -18,6 +19,73 @@ public class SUtilizador {
 		super();
 		this.arUtilizador = new ArrayList<Utilizador>();
 	}
+	
+	public static Utilizador login(String username, String password){
+		Statement stmt = null;
+		Utilizador u = null;
+		
+		String sql = "SELECT * FROM utilizadores WHERE username='"+username+"' AND password='"+password+"';";
+		System.out.println("\n**UserLogin**\nUsername: "+username);
+		
+		try {
+			currentCon = InitConnManager.getConnection();
+			stmt = currentCon.createStatement();
+			rs = stmt.executeQuery(sql);
+			boolean more = rs.next();
+			
+			if(!more){
+				System.out.println("Utilizador nao se encontra registado!");
+			}
+			else if (more){
+				
+				String sql_up = "UPDATE utilizadores SET isOnline=1 WHERE id='"+rs.getInt("ID")+"';";
+				PreparedStatement pstmt = currentCon.prepareStatement(sql_up);
+				pstmt.executeUpdate();
+				
+				int id = rs.getInt("ID");
+				String nome = rs.getString("nome");
+				String sobrenome = rs.getString("sobrenome");
+				String email = rs.getString("email");
+				String contacto = rs.getString("contacto");
+				int cat = rs.getInt("categoria");
+				boolean isDel = rs.getBoolean("isDelete");
+				boolean isOn  = rs.getBoolean("isOnline");
+					
+				
+				Utilizador bean = new Utilizador(id, nome, sobrenome, email, contacto, cat, username, password, isDel, isOn);
+				
+				u = bean;				
+				
+				System.out.println("**WelcomeUser: "+u.getUsername()+" ('"+u.getNome()+"') com o ID ('"+u.getID()+"')**");
+			}
+		} catch (Exception e) {
+			System.out.println("Login failed: "+e);
+		} finally {
+			if(rs != null){
+				try {
+					rs.close();
+				} catch (Exception e) {
+					rs = null;
+				}
+			}
+			
+			if(stmt != null){
+				try {
+					stmt.close();
+				} catch (Exception e) {
+					stmt = null;
+				}
+			}
+			
+			if(currentCon != null){
+				try{
+					currentCon.close();
+				} catch (Exception e) {}				}
+				currentCon = null;
+			}
+		return u;
+	}
+		
 	
 	public static ArrayList<Utilizador> getDBUtilizador(){
 		Statement stmt = null;
