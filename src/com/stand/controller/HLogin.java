@@ -18,6 +18,7 @@ import com.stand.service.SUtilizador;
 public class HLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private Utilizador user;
+	private HttpSession session;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -32,15 +33,11 @@ public class HLogin extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		HttpSession session = request.getSession();
-		if(session.getAttribute("currentSessionUSer") != null){
-			if(user != null){
-				request.getRequestDispatcher("dashboard.jsp").forward(request, response);
-			}
+		if(session.getAttribute("currentSessionUser") != null){
+			request.getRequestDispatcher("dashboard.jsp").forward(request, response);
 		}else{
-			response.sendRedirect("HWeb/?NoSessionSet");
+			response.sendRedirect("HWeb");
 		}
-		
 	}
 
 	/**
@@ -57,7 +54,7 @@ public class HLogin extends HttpServlet {
 				user = SUtilizador.login(username, password);
 				
 				if(user.isOnline()){
-					HttpSession session = request.getSession(true);
+					session = request.getSession(true);
 					session.setAttribute("currentSessionUser", user);
 				}else{
 					response.sendRedirect("HLogin/?InvalidUser");
